@@ -1,0 +1,58 @@
+$primary: hsl(5, 85%, 63%);
+$info:  hsl(35, 77%, 62%);
+$Off-white: hsl(36, 100%, 99%);
+$Grayish_blue: hsl(233, 8%, 79%);
+$Dar_grayish_blue: hsl(236, 13%, 42%);
+$dark_blue: hsl(240, 100%, 5%);
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500&display=swap');
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+body{
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  background: $Off-white;
+}
+
+.article{
+  .title{
+    color: $dark_blue;
+    font-size: calc(2rem + 1.5vw);
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  .info{
+    opacity: 0.8;
+    color: $dark_blue;
+  }
+  button{
+    letter-spacing: 2px;
+  }
+}
+
+.aside{
+  background-color: $dark_blue;
+  h2{
+    color: $info;
+  }
+  .section{
+    p{
+      color: $Grayish_blue;
+    }
+  }
+}
+.subArticle{
+  .number{
+    letter-spacing: 3px;
+    opacity: .6;
+  }
+  .title{
+    font-size: 19px;
+    color: $dark_blue;
+  }
+  p{
+    font-size: 15px;
+    opacity: 0.9;
+  }
+}
+
