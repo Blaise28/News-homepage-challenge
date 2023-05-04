@@ -11857,6 +11857,10 @@ body {
   background: hsl(36, 100%, 99%);
 }
 
+nav .nav-link:hover {
+  color: hsl(5, 85%, 63%);
+}
+
 .article .title {
   color: hsl(240, 100%, 5%);
   font-size: calc(2rem + 1.5vw);
@@ -11870,6 +11874,10 @@ body {
 .article button {
   letter-spacing: 2px;
 }
+.article button:hover {
+  border: 1px solid hsl(240, 100%, 5%);
+  background: hsl(240, 100%, 5%);
+}
 
 .aside {
   background-color: hsl(240, 100%, 5%);
@@ -11877,7 +11885,13 @@ body {
 .aside h2, .aside .h2 {
   color: hsl(35, 77%, 62%);
 }
-.aside .section p {
+.aside .title {
+  cursor: pointer;
+}
+.aside .title:hover {
+  color: hsl(35, 77%, 62%);
+}
+.aside p {
   color: hsl(233, 8%, 79%);
 }
 
@@ -11888,6 +11902,10 @@ body {
 .subArticle .title {
   font-size: 19px;
   color: hsl(240, 100%, 5%);
+  cursor: pointer;
+}
+.subArticle .title:hover {
+  color: hsl(5, 85%, 63%);
 }
 .subArticle p {
   font-size: 15px;

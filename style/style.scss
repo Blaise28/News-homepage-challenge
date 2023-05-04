@@ -13,6 +13,9 @@ body{
   overflow-x: hidden;
   background: $Off-white;
 }
+nav .nav-link:hover{
+  color: $primary;
+}
 
 .article{
   .title{
@@ -27,6 +30,10 @@ body{
   }
   button{
     letter-spacing: 2px;
+    &:hover{
+      border: 1px solid $dark_blue;
+      background: $dark_blue;
+    }
   }
 }
 
@@ -35,11 +42,15 @@ body{
   h2{
     color: $info;
   }
-  .section{
+    .title{
+      cursor: pointer;
+      &:hover{
+        color:$info;
+      }
+    }
     p{
       color: $Grayish_blue;
     }
-  }
 }
 .subArticle{
   .number{
@@ -49,6 +60,10 @@ body{
   .title{
     font-size: 19px;
     color: $dark_blue;
+    cursor: pointer;
+    &:hover{
+      color: $primary;
+    }
   }
   p{
     font-size: 15px;
